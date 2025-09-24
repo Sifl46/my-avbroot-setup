@@ -20,7 +20,6 @@ class OEMUnlockOnBootModule(Module):
     def __init__(self, zip: Path, sig: Path) -> None:
         super().__init__()
 
-        modules.verify_ssh_sig(zip, sig, modules.SSH_PUBLIC_KEY_CHENXIAOLONG)
 
         self.zip: Path = zip
 
